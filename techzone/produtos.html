@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TechZone – Produtos</title>
+  <link rel="stylesheet" href="./style/style.css">
+  <script src="./js/script.js" defer></script>
+</head>
+<body class="theme-dark">
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">TechZone</a>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Início</a>
+        <a href="produtos.html" class="nav-link active">Produtos</a>
+        <a href="sobre.html" class="nav-link">Sobre</a>
+        <a href="contato.html" class="nav-link">Contato</a>
+      </nav>
+      <div class="header-actions">
+        <div class="search-wrap">
+          <input id="catalog-search" type="search" placeholder="Pesquisar catálogo..." />
+        </div>
+        <button class="cta">Conta</button>
+        <button class="menu-toggle" id="menuToggle2">☰</button>
+      </div>
+    </div>
+    <div class="mobile-nav" id="mobileNav2">
+      <a href="index.html">Início</a>
+      <a href="produtos.html">Produtos</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="contato.html">Contato</a>
+    </div>
+  </header>
+
+  <main class="container main">
+    <section class="section-title">
+      <h2>Catálogo</h2>
+      <p>Filtre e encontre o produto ideal.</p>
+    </section>
+
+    <!-- filtros -->
+    <section class="filters container">
+      <div class="filter-row">
+        <select id="categoryFilter">
+          <option value="all">Todas as categorias</option>
+          <option value="notebook">Notebooks</option>
+          <option value="smartphone">Smartphones</option>
+          <option value="audio">Áudio</option>
+          <option value="periferico">Periféricos</option>
+        </select>
+        <div class="sort">
+          <label>Ordenar:</label>
+          <select id="sortBy">
+            <option value="featured">Destaque</option>
+            <option value="price-asc">Preço ↑</option>
+            <option value="price-desc">Preço ↓</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <!-- grid de produtos -->
+    <section class="cards-grid" id="catalog-list"></section>
+
+    <!-- paginação -->
+    <div class="pagination container">
+      <button class="page-btn" disabled>«</button>
+      <button class="page-btn active">1</button>
+      <button class="page-btn">2</button>
+      <button class="page-btn">3</button>
+      <button class="page-btn">»</button>
+    </div>
+  </main>
+  
+  <!-- FOOTER (mesmo layout do index) -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="col about">
+        <a class="brand-footer" href="index.html">TechZone</a>
+        <p>Produtos testados e selecionados.</p>
+        <p class="muted">© <span id="year-home"></span> TechZone. Todos os direitos reservados.</p>
+      </div>
+      <div class="col links">
+        <h4>Loja</h4>
+        <ul>
+          <li><a href="produtos.html">Catálogo</a></li>
+          <li><a href="#">Novidades</a></li>
+          <li><a href="#">Ofertas</a></li>
+        </ul>
+      </div>
+      <div class="col suporte">
+        <h4>Suporte</h4>
+        <ul>
+          <li><a href="contato.html">Fale conosco</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Garantia</a></li>
+        </ul>
+      </div>
+      <div class="col social">
+        <h4>Siga-nos</h4>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="Facebook">Facebook</a>
+          <a href="#" aria-label="Twitter">Twitter</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
